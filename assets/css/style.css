@@ -19,9 +19,7 @@ main {
 }
 
 #input-area {
-    margin-top: 80px;
-    margin-right: 100px;
-    margin-left: 40px;
+    margin: 80px 100px 0 40px;
     width: 950px;
     height: 620px;
 }
@@ -29,7 +27,6 @@ main {
 #input-area textarea {
     width: 100%;
     height: 100%;
-    border: 1px solid #000000;
     border-radius: 20px;
     padding: 20px;
     resize: none;
@@ -66,12 +63,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin: 30px 40px 0 40px;
     width: 400px;
     height: 750px;
-    border: 1px solid #000000;
     border-radius: 20px;
     padding: 20px;
     background-color: #ffffff;
