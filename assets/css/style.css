@@ -1,120 +1,148 @@
 body {
+    background-color: #F3F5FC;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #EFF1FA;
 }
 
-/* logo alura */
 header {
-    margin: 25px;
+    display: flex;
+    justify-content: space-between
+}
+header img {
+    margin: 40px;
 }
 
-/* area dos textareas */
-#columns {
-    display: flex;
+.logo-one {
+    width: 240px;
 }
 
-main {
+.container {
     display: flex;
+    flex: 1;
+    margin: 5px 20px 10px 20px;
+    height: 500px;
+    margin-bottom: 138px;
+}
+#left-box {
+    flex: 1;
 }
 
 #input-area {
-    margin: 80px 100px 0 40px;
-    width: 950px;
-    height: 620px;
+    flex: 2;
 }
-
 #input-area textarea {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
     padding: 20px;
     resize: none;
+    font-size: 24px;
+    margin: 0 20px 8px -20px;
+    width: 100%;
+    height: 100%;
+    border: none;
     outline: none;
-    font-size: 22px;
+    border-radius: 20px;
+    
+    box-sizing: border-box;
 }
+
 #alert-text {
     display: flex;
 }
-#alert-text p {
-    margin: 7px 0px 0 10px;
-    text-decoration: underline;
+#alert-text svg {
+    padding-top: 11px;
+    margin-right: 10px;
 }
 
-#button-area {
-    display: flex;
+.container p {
+    font-size: 17px;
 }
 
-#button-area button {
+
+#result-area {
+    background-color: #ffffff;
     flex: 1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 18px;
-    color: #000000;
-    background-color: #ffffff;
-    border-color: #cccccc;
-}
-#button-area button:hover {
-    color: #ffffff;
-    background-color: #0A3871;
-}
-
-#output-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 40px 0 40px;
-    width: 400px;
-    height: 750px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #000000;
     border-radius: 20px;
+    margin-left: 22px;
+}
+#result-area h1 {
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #bbbbbb;
+}
+#result {
     padding: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    width: 85%;
+    height: 74%;
+}
+
+
+.button-area {
+    display: flex;
+    justify-content: center;
+}
+.button-one, .button-two {
+    margin: 0 30px 0 30px;
+}
+button {
+    width: 180px;
     background-color: #ffffff;
+    padding: 10px;
+    font-size: 22px;
+    border: 0.5px solid #888888;
+    border-radius: 5px;
+    outline: none;
 }
 
-#output-area img {
-    margin: 60px 20px 20px 20px;
+button:hover {
+    background-color: #0A3871;
+    color: #ffffff;
 }
-
-footer {
-    bottom: 0;
-    position: fixed;
+footer {   
     width: 100%;
     text-align: center;
     color: #ffffff;
     background-color: #2b68b3;
  }
 
-footer a {
+ footer a {
     text-decoration: none;
     margin: 5px 10px 0 10px;
  }
 
  footer p {
     font-weight: bold;
-    margin: 0 0 5px 0;
  }
 
- #result {
-    outline: none;
-    resize: none;
-    width: 80%;
-    height: 600px;
-    border: none;
-    padding: 20px;    
-    font-size: 22px;
- }
 
- #copy{
-    width: 280px;
-    margin: 20px;
-    padding: 20px;
-    font-size: 18px;
-    color: #000000;
-    background-color: #ffffff;
-    border-color: #cccccc;
- }
+ @media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        margin: 20px 20px 400px 20px;
+    }
 
-#copy:hover {
-    color: #ffffff;
-    background-color: #0A3871;
- }
+    #input-area {
+        margin-bottom: 160px;
+        margin-left: 0;
+    }
+    #input-area textarea {
+        margin: 0 0px 0 20px;
+        width: 97%;
+    }
+    #copy {
+        margin-right: 20px;
+    }
+    #transferir {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1550px) {
+    .container {
+        height: 555px;
+    }
+}
