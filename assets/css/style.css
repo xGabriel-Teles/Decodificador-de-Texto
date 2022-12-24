@@ -121,7 +121,7 @@ footer {
  }
 
 
- @media (max-width: 1000px) {
+ @media (max-width: 1150px) {
     .container {
         flex-direction: column;
         margin: 20px 20px 400px 20px;
@@ -137,9 +137,11 @@ footer {
     }
     #copy {
         margin-right: 20px;
+        margin-top: 40px;
     }
     #transferir {
         margin-left: 20px;
+        margin-top: 40px;
     }
 }
 @media (max-width: 1550px) {
